@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+
+
+<!-- external css link -->
+<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+
+<body>
+<main class="player">
+<div class="header">
+<a href="#" class="button">
+<i class="fas fa-bars"></i>
+</a>
+<p>Now Playing</p>
+<a href="#" class="button">
+<img src="more.svg" alt="more">
+</a>
+</div>
+
+
+<img src="images/A.jpg" alt="album" class="image" id="image">
+<div class="info">
+<h1 id="mName">Music Name</h1>
+<p id="aName">Artist Name</p>
+</div>
+
+
+<div class="progress">
+<div class="progress-time">
+<span id="currenttimetext" class="left">00:00</span>
+<span id="durationtimetext" class="right">00:00</span>
+</div>
+<div class="progress-bar">
+<!-- range input for seeking -->
+<input type="range" id="seekslider" class="seekslider" min="0" max="100" value="0" step="0.1">
+</div>
+</div>
+<ul class="buttons">
+<li><span id="random" class="shuffle button button-sm">
+<i class="fas fa-random fa-sm"></i>
+</span></li>
+<li><span id="prevbtn" class="prev button button-md">
+<i class="fas fa-step-backward"></i>
+</span></li>
+<li><span id="playpausebtn" class="playpause button button-lg">
+<i class="fas fa-play fa-lg"></i>
+<i class="fas fa-pause fa-lg"></i>
+</span></li>
+<li><span id="nextbtn" class="next button button-md">
+<i class="fas fa-step-forward"></i>
+</span></li>
+<li><span id="repeat" class="loop button button-sm">
+<i class="fas fa-circle-notch fa-sm"></i>
+</span></li>
+</ul>
+<div class="bar"></div>
+</main>
+
+
+<script src="javascript/app.js"></script>
+</body>
+
+
+</html>
